@@ -1,0 +1,17 @@
+<?php
+        
+// вычислить периметр треугольника
+$a = 4;
+$b = 5;
+$c = 7;
+$P = $a + $b + $c;
+
+echo 'storona#1: '. $a . PHP_EOL;
+echo 'storona#2: '. $b . PHP_EOL;
+echo 'storona#3: '. $c . PHP_EOL;
+echo 'perimeter: ' . $P . PHP_EOL;
+
+// вычислить площадь треугольника
+$p = $P/2;
+$S = sqrt($p*($p-$a)*($p-$b)*($p-$c));
+printf('square: %.3f' , $S);
