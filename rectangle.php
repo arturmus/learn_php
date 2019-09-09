@@ -11,4 +11,4 @@ echo 'perimeter: ' . $P . PHP_EOL;
 
 // вычислить площадь прямоугольника
 $S = $a*$b;
-print('square: %f' . $S);
+printf('square: %d' , $S);
