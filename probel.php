@@ -1,23 +1,26 @@
 <?php
-        
-function reverse($str) {
+         
+function addSpace($str) {
     
     $length = strlen($str);
-    $inversed = '';
-    for ($i = $length - 1; $i >= 0; $i--) {
-         $inversed = $inversed . substr($str, $i, 1) . " ";
-    }
-    $inversed = substr($inversed, 0 , -1);
-    return  $inversed;
-}
-function testReverse()
-{
-    $x = reverse('sky');
+    $text = '';
     
-    if ($x === 'y k s') {
-        echo 'testReverse ... OK';
+    for ($i = 0; $i < $length; $i++) {
+         $text = $text . substr($str, $i, 1) . ' ';
+    }
+    
+    return  substr($text, 0, -1);
+}
+
+function testAddSpace()
+{
+    $x = addSpace('sky');
+    
+    if ($x === 's k y') {
+        echo 'testAddSpace ... OK';
     } else {
-        echo 'testReverse failed',PHP_EOL;
+        echo 'testAddSpace failed',PHP_EOL;
     }
 }
-testReverse();
+
+testAddSpace();
