@@ -26,16 +26,18 @@ $a = revers($input);
  function revers(array $input) {
      
      $last = count($input) - 1;
+     $result = [];
      for ($i = 0; $i <= $last; $i++) {
          
-         $result = array_pop ($input);
+         $result[] = array_pop($input);
      }
      
      return $result;
  }
  
  $input = [25, 76, 99];
-
+ 
 $a = revers($input);
 
   var_dump($a);
+ 
